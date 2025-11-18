@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Escape Room</h1>
+
+        <p id="intro">
+            Estás en una habitación cerrada. Encuentra el código oculto para abrir la puerta.
+            Una Empresa distribuye productos desde 4 fabricas hacia 5 centros de distribución.
+        </p>
+
+        <div class="puzzle">
+            <p>Pista: Mira bien la habitación 👀, esta entre 10 y 20</p>
+            <img src="https://i.ibb.co/4ns77LsL/Sala-de-escape-vintage.png" alt="Habitación" id="imagen">
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="codigo" placeholder="Ingresa el código">
+            <button onclick="verificar()">Abrir puerta</button>
+        </div>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <!-- ⭐⭐⭐ AQUI PEGAS LA ANIMACIÓN DE LAS PUERTAS ⭐⭐⭐ -->
+    <div id="animacionPuerta" class="oculto">
+        <div class="puerta izquierda"></div>
+        <div class="puerta derecha"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
